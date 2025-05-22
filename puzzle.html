@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+<body>
+    <h1 id="title">Jeu de Puzzle</h1>
+
+    <div class="logo">
+    <div id="ifnlog">
+        <img id="logoIfnti" src="logo.png" alt="Image du logo d'Ifnti" style="width: 50px; height: 50px; margin-left: 20px;">
+    </div>
+    <div id="kbulog" >
+        <img id="logoKbu" src="kbu.png" alt="Image du logo de Kbu" style="width: 50px; height: 50px; margin-left: 20px;">
+    </div>
+</div>
+<div>
+    <label id ='level' for="difficulty">Niveau :</label>
+    <select id="difficulty">
+        <option value="3" selected>Facile (3x3)</option>
+        <option value="4">Moyen (4x4)</option>
+        <option value="5">Difficile (5x5)</option>
+    </select>
+
+    <button id="shuffleButton">Mélanger</button>
+
+</div>
+
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <p>Féliciations vous avez resolu le Puzzle!!</p>
+    </div>
+</div>
+<div id="confettiContainer"></div>
+
+
+
+<div class="puzzleArrangement">
+    <div id="puzzleContainer"></div>
+    
+    <img id="puzzleImage" src="" alt="Image du puzzle" style="width: 200px; height: 200px; margin-left: 20px;">
+
+</div>
+    <script src="puzzle.js"></script>
+</body>
+<!--
+<footer id="foot">
+    <p>
+        <strong><u>Jeux dévéloppé à l'occasion de la journée porte ouverte</u> </strong> 
+    </p>
+</footer>
+
+-->
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de Puzzle</title>
+    <link rel="stylesheet" href="jeu.css">
+</head>
+<body>
+    <h1 id="title">Jeu de Puzzle</h1>
+<div>
+    <label id ='level' for="difficulty">Niveau :</label>
+    <select id="difficulty">
+        <option value="3" selected>Facile (3x3)</option>
+        <option value="4">Moyen (4x4)</option>
+        <option value="5">Difficile (5x5)</option>
+    </select>
+
+    <button id="shuffleButton">Mélanger</button>
+
+</div>
+
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <p>Féliciations vous avez resolu le Puzzle!!</p>
+    </div>
+</div>
+<div id="confettiContainer"></div>
+
+
+
+<div class="puzzleArrangement">
+    <div id="puzzleContainer"></div>
+    
+    <img id="puzzleImage" src="" alt="Image du puzzle" style="width: 200px; height: 200px; margin-left: 20px;">
+
+</div>
+    <script src="jeu.js"></script>
+</body>
+
+<footer>
+    <p>
+        <strong><u>Jeux dévéloppé à l'occasion de la journée porte ouverte</u> </strong> 
+    </p>
+</footer>
+</html>
